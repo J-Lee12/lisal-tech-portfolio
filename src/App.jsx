@@ -1,10 +1,10 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import Appbar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
 import "./App.css";
 
 function App() {
@@ -13,33 +13,24 @@ function App() {
   return (
     <>
       <Appbar position="static">
-        <Toolbar>
-          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-            News
+        <Toolbar className="bg-slate-500 h-32">
+          <Typography variant="h5" component="div" className="flex-grow">
+            Lisal Tech Engineering
           </Typography>
-          <Button color="inherit">Login</Button>
+          <Button color="inherit">Services</Button>
+          <Button color="inherit">Industries</Button>
+          <Button color="inherit">Contact</Button>
         </Toolbar>
       </Appbar>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="flex items-center justify-center mt-20">
+        <Card className="p-6 border-none shadow-none">
+          <CardContent>
+            <Typography variant="h4" className="font-family-[Open_Sans]">
+              We Don't Change, but Evolve
+            </Typography>
+          </CardContent>
+        </Card>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   );
 }

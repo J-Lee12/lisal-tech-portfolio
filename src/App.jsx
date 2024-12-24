@@ -6,6 +6,7 @@ import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import CardContent from "@mui/material/CardContent";
 import "./App.css";
+import { CardMedia } from "@mui/material";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -23,9 +24,15 @@ function App() {
         </Toolbar>
       </Appbar>
       <div className="flex items-center justify-center mt-20">
-        <Card className="p-6 border-none shadow-none">
-          <CardContent>
-            <Typography variant="h4" className="font-family-[Open_Sans]">
+        <Card className="flex items-center p-4 shadow-none border-none max-w-3xl">
+          <CardMedia
+            component="img"
+            image="/cheol_headshot.HEIC"
+            alt="Headshot"
+            className="w-[50%] h-auto mr-12 object-cover"
+          ></CardMedia>
+          <CardContent className="p-0">
+            <Typography variant="h5" className="font-sans text-gray-800">
               We Don't Change, but Evolve
             </Typography>
           </CardContent>

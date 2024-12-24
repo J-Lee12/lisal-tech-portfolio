@@ -23,9 +23,9 @@ function App() {
         </Toolbar>
       </Appbar>
       <div className="flex items-center justify-center mt-20">
-        <Card className="p-6 border-none shadow-none">
+        <Card className="p-4 border-none shadow-none w-1/4">
           <CardContent>
-            <Typography variant="h4" className="font-family-[Open_Sans]">
+            <Typography variant="h2">
               We Don't Change, but Evolve
             </Typography>
           </CardContent>

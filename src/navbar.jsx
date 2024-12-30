@@ -14,17 +14,19 @@ export default function Navbar() {
 
         <ProjectMenu 
             buttonLabel="Services" 
-            menuItems={["Fire Protection", "Consulating", "Design"]}
+            menuItems={["Codes Consulting", "Fire Protection", "Modeling", "Hazardous Material Analysis", 
+            "Fire Protection Systems Design", "Inspection", "Emergency Mangagement", "Construction Safety"]}
         />
 
         <ProjectMenu
-            buttonLabel="Projects"
-            menuItems={["Current", "Completed", "Future"]}
+            buttonLabel="Industries"
+            menuItems={["General Assembly", "Aviation", "Education", "Business", "Residential", "Healthcare",
+                        "High Rise Buildings", "Warehouse", "Manufacturing", "Advanced Technology"]}
         />
         
         <ProjectMenu
             buttonLabel="About"
-            menuItems={["Company", "Team", "Contact"]}
+            menuItems={["Who We Are", "Contact"]}
         />
 
       </Toolbar>
